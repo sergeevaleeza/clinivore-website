@@ -1,12 +1,5 @@
 import Link from "next/link";
-import {
-  AlertTriangle,
-  TrendingDown,
-  CheckCircle,
-  LayoutDashboard,
-  Sparkles,
-  Plug,
-} from "lucide-react";
+import { LayoutDashboard, Sparkles, Plug } from "lucide-react";
 
 const protocols = [
   { name: "Vivitrol", interval: "Monthly", category: "Addiction Medicine" },
@@ -37,7 +30,7 @@ export default function HomePage() {
     <>
       {/* Hero */}
       <section style={{ background: "var(--offwhite)" }}>
-        <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-28 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 pt-20 pb-10 sm:px-6 sm:pt-28 sm:pb-14 lg:px-8">
           <div className="flex flex-col items-center text-center lg:flex-row lg:items-start lg:text-left lg:gap-16">
             <div className="flex-1 max-w-2xl">
               {/* Eyebrow */}
@@ -156,35 +149,59 @@ export default function HomePage() {
       </section>
 
       {/* Problem Section */}
-      <section className="bg-slate-50 py-20">
+      <section className="bg-slate-50 pt-10 pb-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-8 sm:grid-cols-3">
-            {[
-              {
-                Icon: AlertTriangle,
-                iconColor: "text-red-500",
-                heading: "Missed injections are invisible until it's too late.",
-                body: "Monthly Vivitrol and quarterly Invega patients fall through the cracks in generic EHR systems not built for injection management.",
-              },
-              {
-                Icon: TrendingDown,
-                iconColor: "text-amber-500",
-                heading: "One missed injection can cost a practice thousands.",
-                body: "No-shows, delayed care, and manual follow-up consume staff hours and interrupt the treatment continuity your patients depend on.",
-              },
-              {
-                Icon: CheckCircle,
-                iconColor: "text-green-500",
-                heading: "Clinivore was built for this exact problem.",
-                body: "A morning dashboard, automated outreach queue, and AI-assisted documentation — designed for practices managing psychiatric injections.",
-              },
-            ].map(({ Icon, iconColor, heading, body }) => (
-              <div key={heading} className="rounded-xl border border-slate-200 bg-white p-8 shadow-sm">
-                <Icon className={`mb-4 h-8 w-8 ${iconColor}`} />
-                <h3 className="text-base font-semibold text-slate-900 leading-snug mb-2">{heading}</h3>
-                <p className="text-sm text-slate-600 leading-relaxed">{body}</p>
+
+            {/* Card 1 — Missed injections (red) */}
+            <div className="rounded-xl border border-slate-200 bg-white p-8 shadow-sm">
+              <div style={{ width: 48, height: 48, borderRadius: 12, background: "#FEE2E2", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 16 }}>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#DC2626" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/>
+                  <line x1="12" y1="9" x2="12" y2="13"/>
+                  <line x1="12" y1="17" x2="12.01" y2="17"/>
+                </svg>
               </div>
-            ))}
+              <h3 style={{ fontSize: 18, fontWeight: 700, color: "#0B1D3A", lineHeight: 1.3, marginBottom: 8, fontFamily: "var(--font-sora)" }}>
+                Missed injections are invisible until it&apos;s too late.
+              </h3>
+              <p style={{ fontSize: 14, lineHeight: 1.7, color: "var(--text-secondary)", margin: 0 }}>
+                Monthly Vivitrol and quarterly Invega patients fall through the cracks in generic EHR systems not built for injection management.
+              </p>
+            </div>
+
+            {/* Card 2 — Cost (gold) */}
+            <div className="rounded-xl border border-slate-200 bg-white p-8 shadow-sm">
+              <div style={{ width: 48, height: 48, borderRadius: 12, background: "#FFF4DE", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 16 }}>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B45309" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+                  <polyline points="17 6 23 6 23 12"/>
+                </svg>
+              </div>
+              <h3 style={{ fontSize: 18, fontWeight: 700, color: "#0B1D3A", lineHeight: 1.3, marginBottom: 8, fontFamily: "var(--font-sora)" }}>
+                One missed injection can cost a practice thousands.
+              </h3>
+              <p style={{ fontSize: 14, lineHeight: 1.7, color: "var(--text-secondary)", margin: 0 }}>
+                No-shows, delayed care, and manual follow-up consume staff hours and interrupt the treatment continuity your patients depend on.
+              </p>
+            </div>
+
+            {/* Card 3 — Solution (teal) */}
+            <div className="rounded-xl border border-slate-200 bg-white p-8 shadow-sm">
+              <div style={{ width: 48, height: 48, borderRadius: 12, background: "#DDF7F4", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 16 }}>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10B5A6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                  <polyline points="22 4 12 14.01 9 11.01"/>
+                </svg>
+              </div>
+              <h3 style={{ fontSize: 18, fontWeight: 700, color: "#0B1D3A", lineHeight: 1.3, marginBottom: 8, fontFamily: "var(--font-sora)" }}>
+                Clinivore was built for this exact problem.
+              </h3>
+              <p style={{ fontSize: 14, lineHeight: 1.7, color: "var(--text-secondary)", margin: 0 }}>
+                A morning dashboard, automated outreach queue, and AI-assisted documentation — designed for practices managing psychiatric injections.
+              </p>
+            </div>
+
           </div>
         </div>
       </section>
@@ -266,12 +283,8 @@ export default function HomePage() {
             setup fees. No long-term commitment. Just results.
           </p>
           <div className="mt-8">
-            <Link
-              href="/contact"
-              className="inline-block rounded-[10px] bg-white px-8 py-3 text-sm font-semibold shadow transition-colors hover:bg-[#F8F5F0]"
-              style={{ color: "var(--teal)" }}
-            >
-              Apply for the Pilot
+            <Link href="/contact" className="pilot-cta-btn">
+              Apply for the Pilot →
             </Link>
           </div>
         </div>

@@ -27,13 +27,15 @@ export default function Footer() {
 
         {/* Logo + tagline */}
         <div style={{ marginBottom: 40 }}>
-          <Link href="/" style={{ textDecoration: "none" }}>
-            <span style={{
-              fontFamily: "var(--font-sora)",
-              fontSize: 22,
-              fontWeight: 700,
-              letterSpacing: "-0.03em",
-            }}>
+          <Link href="/" style={{ display: "inline-flex", alignItems: "center", gap: 10, textDecoration: "none", marginBottom: 8 }}>
+            <svg width="28" height="28" viewBox="0 0 34 34" fill="none">
+              <path d="M17 3 A14 14 0 1 0 4.5 23" stroke="rgba(255,255,255,0.2)" strokeWidth="2.5" strokeLinecap="round" fill="none" />
+              <path d="M17 3 A14 14 0 0 1 29.5 22" stroke="#10B5A6" strokeWidth="2.5" strokeLinecap="round" fill="none" />
+              <circle cx="17" cy="3" r="2.2" fill="rgba(255,255,255,0.4)" />
+              <circle cx="29.5" cy="22" r="2.2" fill="#10B981" />
+              <path d="M17 22 C17 22 11.5 18 11.5 14.5 C11.5 12.2 13.2 10.5 15.2 10.5 C16.1 10.5 17 11.3 17 11.3 C17 11.3 17.9 10.5 18.8 10.5 C20.8 10.5 22.5 12.2 22.5 14.5 C22.5 18 17 22 17 22Z" fill="#10B5A6" />
+            </svg>
+            <span style={{ fontFamily: "var(--font-sora)", fontSize: 20, fontWeight: 700, letterSpacing: "-0.03em" }}>
               <span style={{ color: "#ffffff" }}>Clini</span>
               <span style={{ color: "#10B5A6" }}>vore</span>
             </span>

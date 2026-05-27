@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.1] — 2026-05-26
+
+Four focused visual fixes post brand-V3 launch.
+
+- **Navbar icon mark** (`components/Navbar.tsx`): Added C + heart SVG icon (30×30) to the left of the "Clinivore" wordmark. Light teal circle background (#F0FAF9), muted navy C-arc, teal arc segment (#10B5A6), blue orbit dot (#2563EB), green orbit dot (#10B981), teal heart fill. Wordmark font size reduced from 22px to 20px to balance with icon.
+- **Footer icon mark** (`components/Footer.tsx`): Added dark-background version of the same icon (28×28, no background circle). C-arc in rgba(255,255,255,0.2), teal arc (#10B5A6), white/40 top dot, green bottom dot, teal heart. Footer logo link now uses flexbox row with 10px gap.
+- **Pilot CTA button** (`app/page.tsx`, `app/globals.css`): Changed "Apply for the Pilot" from white-on-navy (low-prominence) to solid teal (#10B5A6) with dark-teal hover (#0E9F93). Added `.pilot-cta-btn` CSS class in globals.css so hover works without JS event handlers (page.tsx is a Server Component). Added arrow suffix " →".
+- **Hero bottom padding** (`app/page.tsx`): Reduced hero inner container from `py-20 sm:py-28` to `pt-20 pb-10 sm:pt-28 sm:pb-14`. Reduced problem section from `py-20` to `pt-10 pb-20`. Closes the visual gap between hero and the three problem cards.
+- **Problem card icons** (`app/page.tsx`): Replaced small Lucide icons (`AlertTriangle`, `TrendingDown`, `CheckCircle`) with 48×48 colored icon containers + larger inline SVGs. Card 1: pale red (#FEE2E2) container, red (#DC2626) triangle warning. Card 2: pale gold (#FFF4DE) container, amber (#B45309) trending-down arrow. Card 3: pale teal (#DDF7F4) container, teal (#10B5A6) checkmark. Card headings bumped from `text-base font-semibold` to 18px/700/Sora for stronger hierarchy. Body text updated to 14px/1.7 line-height/`var(--text-secondary)`. Removed unused `AlertTriangle`, `TrendingDown`, `CheckCircle` lucide-react imports.
+
+---
+
 ## [1.1.0] — 2026-05-26
 
 Brand V3 implementation — Clinivore Official Brand Toolkit.
