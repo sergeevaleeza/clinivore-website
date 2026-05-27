@@ -223,21 +223,27 @@ export default function HomePage() {
                 Icon: LayoutDashboard,
                 title: "Morning Dashboard",
                 body: "Know exactly who needs attention before your first patient arrives. Overdue, due today, and high-risk patients surfaced automatically.",
+                iconBg: "#DDF7F4",
+                iconColor: "#10B5A6",
               },
               {
                 Icon: Sparkles,
                 title: "AI Outreach Drafts",
                 body: "Generate warm, HIPAA-aware call scripts and chart notes in one click. Drafted with psychiatric-appropriate language. Copy directly into Practice Fusion.",
+                iconBg: "#EDE9FE",
+                iconColor: "#7C3AED",
               },
               {
                 Icon: Plug,
                 title: "Practice Fusion Ready",
                 body: "Import appointment reports via CSV today. Full FHIR API integration on the roadmap. Built to fit the workflows your team already uses.",
+                iconBg: "#EEF4FF",
+                iconColor: "#2563EB",
               },
-            ].map(({ Icon, title, body }) => (
+            ].map(({ Icon, title, body, iconBg, iconColor }) => (
               <div key={title} className="rounded-xl border border-slate-100 bg-white p-8 shadow-sm hover:shadow-md transition-shadow">
-                <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-50">
-                  <Icon className="h-5 w-5 text-brand-600" />
+                <div style={{ width: 40, height: 40, borderRadius: 10, background: iconBg, display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 16 }}>
+                  <Icon style={{ width: 20, height: 20, color: iconColor }} />
                 </div>
                 <h3 className="text-base font-semibold text-slate-900 mb-2">{title}</h3>
                 <p className="text-sm text-slate-600 leading-relaxed">{body}</p>

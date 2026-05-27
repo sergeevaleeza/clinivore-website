@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.1.2] — 2026-05-26
+
+Three visual polish fixes.
+
+- **Navbar icon size** (`components/Navbar.tsx`): Bumped SVG icon mark from 30×30 to 36×36 for better visual weight alongside the wordmark.
+- **Footer icon size** (`components/Footer.tsx`): Bumped SVG icon mark from 28×28 to 32×32 to match the increased navbar icon scale.
+- **Features page CTA button** (`app/features/page.tsx`, `app/globals.css`): Changed CTA band background from `bg-brand-600` Tailwind class to inline `var(--teal)`. Replaced the white/brand-600 Tailwind-classed button with a new `.white-cta-btn` CSS class (white background, teal `#10B5A6` text, `#F0FAF9` hover). Subtext updated from `text-brand-100` to `rgba(255,255,255,0.75)` for better semantic contrast. Added arrow suffix " →". CSS class added to `globals.css` so hover works in this Server Component.
+- **Homepage feature highlight icons** (`app/page.tsx`): Each of the three feature cards now has its own colored icon container. Morning Dashboard: `#DDF7F4` bg + `#10B5A6` teal icon. AI Outreach Drafts: `#EDE9FE` bg + `#7C3AED` plum icon. Practice Fusion Ready: `#EEF4FF` bg + `#2563EB` blue icon. Icon containers are 40×40 with 10px border-radius. Icons rendered at 20×20 via inline `style` color override (compatible with Lucide React).
+
+---
+
 ## [1.1.1] — 2026-05-26
 
 Four focused visual fixes post brand-V3 launch.

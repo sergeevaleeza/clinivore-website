@@ -28,7 +28,7 @@ export default function Footer() {
         {/* Logo + tagline */}
         <div style={{ marginBottom: 40 }}>
           <Link href="/" style={{ display: "inline-flex", alignItems: "center", gap: 10, textDecoration: "none", marginBottom: 8 }}>
-            <svg width="28" height="28" viewBox="0 0 34 34" fill="none">
+            <svg width="32" height="32" viewBox="0 0 34 34" fill="none">
               <path d="M17 3 A14 14 0 1 0 4.5 23" stroke="rgba(255,255,255,0.2)" strokeWidth="2.5" strokeLinecap="round" fill="none" />
               <path d="M17 3 A14 14 0 0 1 29.5 22" stroke="#10B5A6" strokeWidth="2.5" strokeLinecap="round" fill="none" />
               <circle cx="17" cy="3" r="2.2" fill="rgba(255,255,255,0.4)" />

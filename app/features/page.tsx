@@ -171,20 +171,17 @@ export default function FeaturesPage() {
         </div>
       </section>
 
-      <section className="bg-brand-600 py-16">
+      <section style={{ background: "var(--teal)" }} className="py-16">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-white sm:text-3xl">
             See all of this working in your practice.
           </h2>
-          <p className="mt-3 text-brand-100">
+          <p className="mt-3" style={{ color: "rgba(255,255,255,0.75)" }}>
             Apply for the 8-week pilot and get full platform access — no setup fee.
           </p>
           <div className="mt-6">
-            <Link
-              href="/contact"
-              className="inline-block rounded-md bg-white px-8 py-3 text-sm font-semibold text-brand-600 hover:bg-brand-50 transition-colors"
-            >
-              Apply for the Pilot
+            <Link href="/contact" className="white-cta-btn">
+              Apply for the Pilot →
             </Link>
           </div>
         </div>

@@ -34,7 +34,7 @@ export default function Navbar() {
 
           {/* Logo */}
           <Link href="/" style={{ display: "flex", alignItems: "center", gap: 10, textDecoration: "none" }}>
-            <svg width="30" height="30" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="36" height="36" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="17" cy="17" r="16" fill="#F0FAF9" />
               <path d="M17 3 A14 14 0 1 0 4.5 23" stroke="#CBD5E1" strokeWidth="2.5" strokeLinecap="round" fill="none" />
               <path d="M17 3 A14 14 0 0 1 29.5 22" stroke="#10B5A6" strokeWidth="2.5" strokeLinecap="round" fill="none" />
