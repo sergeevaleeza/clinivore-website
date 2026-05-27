@@ -2,7 +2,7 @@
 
 ## [1.0.0] — 2026-05-26
 
-Initial release of the Adherix marketing and developer website.
+Initial release of the Clinivore marketing and developer website.
 
 ### Project Setup
 
@@ -21,7 +21,7 @@ Initial release of the Adherix marketing and developer website.
 ### Layout & Navigation
 
 - **`app/layout.tsx`**: Root layout with Inter font (via `next/font/google`), site-wide metadata, sticky Navbar, and Footer. Renders all pages within a `flex-col` body.
-- **`components/Navbar.tsx`** (client component): Sticky header with scroll-shadow, logo (`adh` in brand-500 + `erix` in slate-900), desktop nav links, "Request a Demo" CTA, and responsive mobile hamburger menu with slide-down drawer
+- **`components/Navbar.tsx`** (client component): Sticky header with scroll-shadow, logo (`clini` in brand-500 + `vore` in slate-900), desktop nav links, "Request a Demo" CTA, and responsive mobile hamburger menu with slide-down drawer
 - **`components/Footer.tsx`**: Footer with logo, tagline, all 7 nav links, copyright, and HIPAA/Pilot status note
 
 ### Pages
@@ -41,7 +41,7 @@ Initial release of the Adherix marketing and developer website.
 #### For Practices (`app/for-practices/page.tsx`)
 - Hero with audience-focused headline
 - 3-column "Who It's For" section: Psychiatrists, Office Coordinators, Practice Administrators
-- Static ROI table: 4 rows covering appointment value, staff hours, Adherix cost, and break-even calculation
+- Static ROI table: 4 rows covering appointment value, staff hours, Clinivore cost, and break-even calculation
 - Pilot program section: two cards covering what's included and who qualifies, with CTA
 
 #### Developer (`app/developer/page.tsx`)
@@ -71,7 +71,7 @@ Initial release of the Adherix marketing and developer website.
 
 #### Contact (`app/contact/page.tsx`)
 - Client component with form (name, email, org, reason dropdown, message)
-- On submit: opens `mailto:hello@adherixhealth.app` with pre-filled subject and body — no backend required
+- On submit: opens `mailto:hello@clinivore.app` with pre-filled subject and body — no backend required
 - Post-submit confirmation state with fallback email link
 - Three contact cards: Pilot Applications, Developer/API, General
 - Direct email display

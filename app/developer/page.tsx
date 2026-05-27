@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ExternalLink, Shield, Database, Code2 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Developer Hub — Adherix",
+  title: "Developer Hub — Clinivore",
   description:
     "Integration documentation, API references, and compliance resources for healthcare technology partners. Practice Fusion FHIR R4 integration.",
 };
@@ -47,7 +47,7 @@ export default function DeveloperPage() {
             Developer Hub
           </div>
           <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
-            Adherix Developer Hub
+            Clinivore Developer Hub
           </h1>
           <p className="mt-5 text-lg text-slate-600">
             Integration documentation, API references, and compliance resources
@@ -166,7 +166,7 @@ export default function DeveloperPage() {
           <div className="grid gap-6 sm:grid-cols-2">
             <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
               <h3 className="font-semibold text-slate-900 mb-4 text-sm uppercase tracking-wider">
-                What Adherix Stores
+                What Clinivore Stores
               </h3>
               <ul className="space-y-2">
                 {storedData.map((item) => (
@@ -179,7 +179,7 @@ export default function DeveloperPage() {
             </div>
             <div className="rounded-xl border border-red-100 bg-red-50 p-6">
               <h3 className="font-semibold text-red-900 mb-4 text-sm uppercase tracking-wider">
-                What Adherix Never Stores
+                What Clinivore Never Stores
               </h3>
               <ul className="space-y-2">
                 {neverStored.map((item) => (
@@ -237,14 +237,14 @@ export default function DeveloperPage() {
           <h2 className="text-2xl font-bold text-slate-900 mb-4">Open Source Core</h2>
           <div className="rounded-xl border border-slate-200 bg-slate-50 p-6">
             <p className="text-slate-600 mb-4 text-sm leading-relaxed">
-              Adherix is developed openly on GitHub. Our core platform is available for review,
+              Clinivore is developed openly on GitHub. Our core platform is available for review,
               audit, and contribution.
             </p>
             <div className="grid gap-3 sm:grid-cols-3 text-sm mb-5">
               <div>
                 <span className="text-slate-500">GitHub:</span>{" "}
                 <span className="font-mono text-brand-700 text-xs">
-                  github.com/sergeevaleeza/adherix
+                  github.com/sergeevaleeza/clinivore
                 </span>
               </div>
               <div>
@@ -259,7 +259,7 @@ export default function DeveloperPage() {
               </div>
             </div>
             <a
-              href="https://github.com/sergeevaleeza/adherix"
+              href="https://github.com/sergeevaleeza/clinivore"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-md bg-slate-900 px-4 py-2 text-sm font-semibold text-white hover:bg-slate-700 transition-colors"
@@ -280,7 +280,7 @@ export default function DeveloperPage() {
           </p>
           <div className="grid gap-3 sm:grid-cols-2 text-sm">
             {[
-              { label: "Company", value: "Adherix" },
+              { label: "Company", value: "Clinivore" },
               { label: "Product", value: "Psychiatric Treatment Continuity Platform" },
               {
                 label: "Use Case",
@@ -293,7 +293,7 @@ export default function DeveloperPage() {
                 label: "PHI Handling",
                 value: "BAA required; PHI isolated from AI by default",
               },
-              { label: "Contact", value: "hello@adherixhealth.app" },
+              { label: "Contact", value: "hello@clinivore.app" },
             ].map(({ label, value }) => (
               <div key={label} className="flex flex-col">
                 <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider">

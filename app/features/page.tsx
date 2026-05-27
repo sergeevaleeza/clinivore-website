@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Features — Adherix",
+  title: "Features — Clinivore",
   description:
     "Full feature breakdown: morning dashboard, treatment protocols, outreach queue, AI documentation, Practice Fusion integration, and HIPAA audit trail.",
 };
@@ -80,7 +80,7 @@ const features = [
       "Chart note export formatted for Practice Fusion",
     ],
     detail:
-      "Today, Adherix works with Practice Fusion via the same CSV appointment export your front desk already uses. No new logins for patients. No IT project. Full FHIR R4 API integration is in active development for Phase 2.",
+      "Today, Clinivore works with Practice Fusion via the same CSV appointment export your front desk already uses. No new logins for patients. No IT project. Full FHIR R4 API integration is in active development for Phase 2.",
     align: "left",
   },
   {
@@ -94,7 +94,7 @@ const features = [
       "Designed for HIPAA Security Rule compliance",
     ],
     detail:
-      "Every action in Adherix — patient views, outreach attempts, AI draft generation, status changes — is written to an append-only audit log. The log captures who did what, when, and from which role. Designed for HIPAA Security Rule compliance from the ground up.",
+      "Every action in Clinivore — patient views, outreach attempts, AI draft generation, status changes — is written to an append-only audit log. The log captures who did what, when, and from which role. Designed for HIPAA Security Rule compliance from the ground up.",
     align: "right",
   },
 ];

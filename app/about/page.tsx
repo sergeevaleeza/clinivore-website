@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Briefcase } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About — Adherix",
+  title: "About — Clinivore",
   description:
     "Built by people with direct experience in medical office operations and healthcare data.",
 };
@@ -23,20 +23,20 @@ export default function AboutPage() {
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <div className="prose prose-slate max-w-none">
             <p className="text-lg text-slate-600 leading-relaxed">
-              Adherix was created by a team with direct experience in medical office operations
+              Clinivore was created by a team with direct experience in medical office operations
               and healthcare data. We&apos;ve seen firsthand how psychiatric practices manage
               injection schedules on spreadsheets and sticky notes — and what happens when
               patients fall through the cracks.
             </p>
             <p className="mt-5 text-slate-600 leading-relaxed">
-              We built Adherix because no existing tool was purpose-built for the specific
+              We built Clinivore because no existing tool was purpose-built for the specific
               workflows of injection psychiatry: the monthly Vivitrol shot, the quarterly Invega
               Trinza, the ketamine induction series. Generic CRMs don&apos;t understand these
               treatments. Generic EHR modules weren&apos;t designed for coordinators who spend
               their mornings doing outreach.
             </p>
             <p className="mt-5 text-slate-600 leading-relaxed">
-              Adherix is currently in pilot phase, working directly with psychiatric practices
+              Clinivore is currently in pilot phase, working directly with psychiatric practices
               to validate the product before broader release.
             </p>
           </div>
@@ -64,7 +64,7 @@ export default function AboutPage() {
               Phase 1 Pilot
             </p>
             <p className="text-slate-700 leading-relaxed">
-              Adherix is in Phase 1 pilot. We are onboarding a small cohort of practices. If
+              Clinivore is in Phase 1 pilot. We are onboarding a small cohort of practices. If
               you run a psychiatric practice and manage injectable treatments, we&apos;d like to
               talk.
             </p>

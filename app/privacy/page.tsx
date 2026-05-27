@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — Adherix",
+  title: "Privacy Policy — Clinivore",
   description:
-    "Adherix privacy policy. How we collect, use, and protect information in our psychiatric treatment tracking platform.",
+    "Clinivore privacy policy. How we collect, use, and protect information in our psychiatric treatment tracking platform.",
 };
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
@@ -23,9 +23,9 @@ export default function PrivacyPage() {
         <p className="mt-2 text-sm text-slate-500">Last Updated: May 26, 2026</p>
 
         <p className="mt-6 text-slate-600 leading-relaxed">
-          This Privacy Policy describes how Adherix (&quot;we,&quot; &quot;us,&quot; or
+          This Privacy Policy describes how Clinivore (&quot;we,&quot; &quot;us,&quot; or
           &quot;our&quot;) collects, uses, and protects information in connection with the
-          Adherix treatment tracking platform (&quot;Service&quot;). Adherix is a
+          Clinivore treatment tracking platform (&quot;Service&quot;). Clinivore is a
           software-as-a-service product used by licensed healthcare practices — not
           directly by patients.
         </p>
@@ -33,13 +33,13 @@ export default function PrivacyPage() {
         <Section title="1. Information We Collect">
           <p>
             <strong>Patient treatment records:</strong> Practice staff enter or import patient
-            treatment records into Adherix, including patient identifiers, treatment protocols,
+            treatment records into Clinivore, including patient identifiers, treatment protocols,
             appointment history, and outreach notes. This information constitutes Protected
             Health Information (PHI) under HIPAA when entered by a covered entity.
           </p>
           <p>
             <strong>Staff account information:</strong> We collect name, email address, and
-            role designation for each practice staff member with an Adherix account.
+            role designation for each practice staff member with an Clinivore account.
           </p>
           <p>
             <strong>Usage and audit logs:</strong> We log all actions taken within the platform,
@@ -48,8 +48,8 @@ export default function PrivacyPage() {
             monitoring, and service improvement.
           </p>
           <p>
-            <strong>No direct patient collection:</strong> Adherix is a staff-facing tool.
-            Patients do not create accounts, submit forms, or interact with Adherix directly.
+            <strong>No direct patient collection:</strong> Clinivore is a staff-facing tool.
+            Patients do not create accounts, submit forms, or interact with Clinivore directly.
             All patient data is entered by authorized practice staff.
           </p>
         </Section>
@@ -77,20 +77,20 @@ export default function PrivacyPage() {
 
         <Section title="3. HIPAA and Protected Health Information">
           <p>
-            Adherix operates as a{" "}
+            Clinivore operates as a{" "}
             <strong>Business Associate</strong> under the Health Insurance Portability and
             Accountability Act (HIPAA) when handling PHI on behalf of a covered entity. Prior to
-            accessing or processing PHI, Adherix enters into a Business Associate Agreement
+            accessing or processing PHI, Clinivore enters into a Business Associate Agreement
             (BAA) with the covered entity.
           </p>
           <p>
-            PHI within Adherix is handled in accordance with the HIPAA Security Rule, including
+            PHI within Clinivore is handled in accordance with the HIPAA Security Rule, including
             administrative, physical, and technical safeguards. Practices remain responsible for
             workforce training and access control under the HIPAA Privacy Rule.
           </p>
           <p>
             <strong>42 CFR Part 2:</strong> For practices treating substance use disorders,
-            Adherix is designed with 42 CFR Part 2 protections in mind. Substance use disorder
+            Clinivore is designed with 42 CFR Part 2 protections in mind. Substance use disorder
             treatment records require patient consent prior to disclosure and are handled through
             staff-guided workflows, not automated processes.
           </p>
@@ -98,7 +98,7 @@ export default function PrivacyPage() {
 
         <Section title="4. AI and Third-Party Services">
           <p>
-            Adherix&apos;s AI documentation assistant uses the Anthropic Claude API to generate
+            Clinivore&apos;s AI documentation assistant uses the Anthropic Claude API to generate
             call scripts, chart notes, and outreach drafts.
           </p>
           <p>
@@ -126,8 +126,8 @@ export default function PrivacyPage() {
           </p>
           <p>
             Practices may request deletion of their data by contacting us at{" "}
-            <a href="mailto:privacy@adherixhealth.app" className="text-brand-600 hover:underline">
-              privacy@adherixhealth.app
+            <a href="mailto:privacy@clinivore.app" className="text-brand-600 hover:underline">
+              privacy@clinivore.app
             </a>
             . Deletion requests will be honored within 30 days, subject to applicable legal
             retention obligations.
@@ -136,7 +136,7 @@ export default function PrivacyPage() {
 
         <Section title="6. Security">
           <p>
-            Adherix employs industry-standard technical safeguards to protect the information
+            Clinivore employs industry-standard technical safeguards to protect the information
             we process:
           </p>
           <ul className="list-disc list-inside space-y-1 text-slate-600">
@@ -161,14 +161,14 @@ export default function PrivacyPage() {
           </p>
           <p>
             <strong>Email:</strong>{" "}
-            <a href="mailto:privacy@adherixhealth.app" className="text-brand-600 hover:underline">
-              privacy@adherixhealth.app
+            <a href="mailto:privacy@clinivore.app" className="text-brand-600 hover:underline">
+              privacy@clinivore.app
             </a>
           </p>
           <p>
             <strong>General inquiries:</strong>{" "}
-            <a href="mailto:hello@adherixhealth.app" className="text-brand-600 hover:underline">
-              hello@adherixhealth.app
+            <a href="mailto:hello@clinivore.app" className="text-brand-600 hover:underline">
+              hello@clinivore.app
             </a>
           </p>
         </Section>

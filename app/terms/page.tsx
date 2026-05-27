@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Terms of Service — Adherix",
-  description: "Adherix terms of service for licensed healthcare practices.",
+  title: "Terms of Service — Clinivore",
+  description: "Clinivore terms of service for licensed healthcare practices.",
 };
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
@@ -23,15 +23,15 @@ export default function TermsPage() {
         <p className="mt-2 text-sm text-slate-500">Last Updated: May 26, 2026</p>
 
         <p className="mt-6 text-slate-600 leading-relaxed">
-          These Terms of Service (&quot;Terms&quot;) govern your use of the Adherix
-          platform and services (&quot;Service&quot;) provided by Adherix (&quot;we,&quot;
+          These Terms of Service (&quot;Terms&quot;) govern your use of the Clinivore
+          platform and services (&quot;Service&quot;) provided by Clinivore (&quot;we,&quot;
           &quot;us,&quot; or &quot;our&quot;). By accessing or using the Service, you agree
           to be bound by these Terms.
         </p>
 
         <Section title="1. Acceptance of Terms">
           <p>
-            By accessing or using the Adherix Service, you represent that you are authorized
+            By accessing or using the Clinivore Service, you represent that you are authorized
             to enter into this agreement on behalf of a licensed healthcare practice and that
             your practice agrees to be bound by these Terms. If you do not agree to these
             Terms, do not use the Service.
@@ -40,13 +40,13 @@ export default function TermsPage() {
 
         <Section title="2. Description of Service">
           <p>
-            Adherix is a software-as-a-service (SaaS) platform designed for licensed
+            Clinivore is a software-as-a-service (SaaS) platform designed for licensed
             healthcare practices that administer injectable psychiatric treatments. The Service
             provides tools for tracking treatment schedules, managing patient outreach, generating
             documentation drafts, and maintaining compliance records.
           </p>
           <p>
-            Adherix is a staff-facing administrative tool. It is not a clinical decision support
+            Clinivore is a staff-facing administrative tool. It is not a clinical decision support
             system, not a medical device, and not a substitute for clinical judgment.
           </p>
         </Section>
@@ -55,7 +55,7 @@ export default function TermsPage() {
           <p>
             If your practice is a HIPAA Covered Entity and the Service involves the handling of
             Protected Health Information (PHI), you agree to execute a Business Associate
-            Agreement (BAA) with Adherix prior to entering PHI into the platform. Use of the
+            Agreement (BAA) with Clinivore prior to entering PHI into the platform. Use of the
             Service with PHI without an executed BAA is a violation of these Terms.
           </p>
         </Section>
@@ -111,21 +111,21 @@ export default function TermsPage() {
             </li>
           </ul>
           <p>
-            Adherix provides technical safeguards and audit logging, but cannot be responsible
+            Clinivore provides technical safeguards and audit logging, but cannot be responsible
             for workforce training, physical security, or policy compliance within your practice.
           </p>
         </Section>
 
         <Section title="8. Limitation of Liability">
           <p>
-            TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, ADHERIX SHALL NOT BE LIABLE
+            TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, CLINIVORE SHALL NOT BE LIABLE
             FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES,
             INCLUDING BUT NOT LIMITED TO LOSS OF REVENUE, LOSS OF DATA, OR HARM TO PATIENTS,
             ARISING FROM YOUR USE OF OR INABILITY TO USE THE SERVICE.
           </p>
           <p>
-            Adherix is an administrative coordination tool. Clinical decisions remain the
-            responsibility of licensed healthcare providers. Adherix does not provide medical
+            Clinivore is an administrative coordination tool. Clinical decisions remain the
+            responsibility of licensed healthcare providers. Clinivore does not provide medical
             advice and is not liable for clinical outcomes.
           </p>
         </Section>
@@ -153,8 +153,8 @@ export default function TermsPage() {
           </p>
           <p>
             <strong>Email:</strong>{" "}
-            <a href="mailto:hello@adherixhealth.app" className="text-brand-600 hover:underline">
-              hello@adherixhealth.app
+            <a href="mailto:hello@clinivore.app" className="text-brand-600 hover:underline">
+              hello@clinivore.app
             </a>
           </p>
         </Section>

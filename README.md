@@ -1,15 +1,15 @@
-# Adherix Marketing Website
+# Clinivore Marketing Website
 
-Public marketing and developer credibility website for [Adherix](https://adherixhealth.app) — a treatment continuity platform for psychiatric practices.
+Public marketing and developer credibility website for [Clinivore](https://clinivore.app) — a treatment continuity platform for psychiatric practices.
 
 ## What this repo is
 
-This is the **public marketing site** for Adherix, separate from the main application code. It serves two purposes:
+This is the **public marketing site** for Clinivore, separate from the main application code. It serves two purposes:
 
-1. **Practice Fusion API access application** — reviewed by PF developer relations at [/developer](https://adherixhealth.app/developer)
-2. **Customer acquisition** — psychiatric practices finding Adherix via search
+1. **Practice Fusion API access application** — reviewed by PF developer relations at [/developer](https://clinivore.app/developer)
+2. **Customer acquisition** — psychiatric practices finding Clinivore via search
 
-The application code is at [github.com/sergeevaleeza/adherix](https://github.com/sergeevaleeza/adherix).
+The application code is at [github.com/sergeevaleeza/clinivore](https://github.com/sergeevaleeza/clinivore).
 
 ## Tech Stack
 
@@ -56,7 +56,7 @@ Output goes to `out/` (static HTML/CSS/JS). Zero TypeScript errors required.
 2. Go to [vercel.com](https://vercel.com) → Add New Project → Import from GitHub
 3. Select this repo — framework auto-detected as Next.js
 4. Deploy → get your `.vercel.app` URL
-5. Add custom domain `adherixhealth.app` in Vercel project settings
+5. Add custom domain `clinivore.app` in Vercel project settings
 6. Set DNS on Porkbun (A record + CNAME per Vercel instructions)
 
 GitHub Actions auto-deploy on push to `main` via `.github/workflows/deploy.yml`.
@@ -64,17 +64,17 @@ Requires `VERCEL_TOKEN`, `ORG_ID`, and `PROJECT_ID` secrets in the repo.
 
 ## Domain Setup
 
-Domain: `adherixhealth.app` via Porkbun (~$10/year).
+Domain: `clinivore.app` via Porkbun (~$10/year).
 SSL is automatic via Vercel (Let's Encrypt).
 
 ## Practice Fusion API Checklist
 
 Before applying at the PF developer portal:
 
-- Live website: `https://adherixhealth.app`
-- Developer page: `https://adherixhealth.app/developer`
-- Privacy Policy: `https://adherixhealth.app/privacy`
-- Terms of Service: `https://adherixhealth.app/terms`
-- HIPAA Statement: `https://adherixhealth.app/hipaa`
-- Contact: `https://adherixhealth.app/contact`
-- GitHub: `github.com/sergeevaleeza/adherix`
+- Live website: `https://clinivore.app`
+- Developer page: `https://clinivore.app/developer`
+- Privacy Policy: `https://clinivore.app/privacy`
+- Terms of Service: `https://clinivore.app/terms`
+- HIPAA Statement: `https://clinivore.app/hipaa`
+- Contact: `https://clinivore.app/contact`
+- GitHub: `github.com/sergeevaleeza/clinivore`

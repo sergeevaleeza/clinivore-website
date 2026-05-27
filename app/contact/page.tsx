@@ -25,12 +25,12 @@ export default function ContactPage() {
     const message = data.get("message") as string;
 
     const subject = encodeURIComponent(
-      `Adherix Inquiry — ${reason || "General"} from ${org || name}`
+      `Clinivore Inquiry — ${reason || "General"} from ${org || name}`
     );
     const body = encodeURIComponent(
       `Name: ${name}\nEmail: ${email}\nOrganization: ${org}\nReason: ${reason}\n\n${message}`
     );
-    window.location.href = `mailto:hello@adherixhealth.app?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:hello@clinivore.app?subject=${subject}&body=${body}`;
     setSubmitted(true);
   }
 
@@ -62,10 +62,10 @@ export default function ContactPage() {
                 <p className="mt-2 text-sm text-slate-600">
                   Your email client should have opened. If not, email us directly at{" "}
                   <a
-                    href="mailto:hello@adherixhealth.app"
+                    href="mailto:hello@clinivore.app"
                     className="text-brand-600 hover:underline"
                   >
-                    hello@adherixhealth.app
+                    hello@clinivore.app
                   </a>
                   .
                 </p>
@@ -153,7 +153,7 @@ export default function ContactPage() {
                 </button>
 
                 <p className="text-xs text-slate-400 text-center">
-                  Submitting will open your email client to send to hello@adherixhealth.app
+                  Submitting will open your email client to send to hello@clinivore.app
                 </p>
               </form>
             )}
@@ -170,7 +170,7 @@ export default function ContactPage() {
               {
                 Icon: Code2,
                 title: "Developer / API",
-                body: "Reviewing Adherix for Practice Fusion integration? We&apos;d love to connect. See our <a href='/developer' class='text-brand-600 hover:underline'>Developer Hub</a> for integration documentation.",
+                body: "Reviewing Clinivore for Practice Fusion integration? We&apos;d love to connect. See our <a href='/developer' class='text-brand-600 hover:underline'>Developer Hub</a> for integration documentation.",
               },
               {
                 Icon: MessageCircle,
@@ -198,10 +198,10 @@ export default function ContactPage() {
             <div className="rounded-xl border border-slate-200 bg-white p-6">
               <p className="text-sm text-slate-500 mb-1">Direct email</p>
               <a
-                href="mailto:hello@adherixhealth.app"
+                href="mailto:hello@clinivore.app"
                 className="text-brand-600 font-medium hover:underline"
               >
-                hello@adherixhealth.app
+                hello@clinivore.app
               </a>
             </div>
           </div>

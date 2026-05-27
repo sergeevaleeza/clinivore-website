@@ -30,8 +30,8 @@ export default function Navbar() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center gap-0 text-xl font-bold tracking-tight">
-            <span className="text-brand-500">adh</span>
-            <span className="text-slate-900">erix</span>
+            <span className="text-brand-500">clini</span>
+            <span className="text-slate-900">vore</span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-8">

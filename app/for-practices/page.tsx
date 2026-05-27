@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Stethoscope, ClipboardList, BarChart3, Check } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "For Practices — Adherix",
+  title: "For Practices — Clinivore",
   description:
     "Built for psychiatrists, office coordinators, and practice administrators managing injectable treatment schedules.",
 };
@@ -20,7 +20,7 @@ const roiRows = [
     highlight: false,
   },
   {
-    label: "Adherix monthly cost (pilot tier)",
+    label: "Clinivore monthly cost (pilot tier)",
     value: "$299/month",
     highlight: false,
   },
@@ -73,7 +73,7 @@ export default function ForPracticesPage() {
               {
                 Icon: Stethoscope,
                 role: "Psychiatrists",
-                body: "Your patients need consistent injection intervals. Adherix gives you visibility into who's at risk — before they miss.",
+                body: "Your patients need consistent injection intervals. Clinivore gives you visibility into who's at risk — before they miss.",
               },
               {
                 Icon: ClipboardList,
@@ -131,7 +131,7 @@ export default function ForPracticesPage() {
             </table>
           </div>
           <p className="mt-6 text-center text-slate-600 text-sm leading-relaxed">
-            One recovered Vivitrol appointment covers Adherix for the month.
+            One recovered Vivitrol appointment covers Clinivore for the month.
             Everything after that is recovered revenue — and better patient outcomes.
           </p>
         </div>
@@ -143,7 +143,7 @@ export default function ForPracticesPage() {
           <div className="text-center mb-12">
             <h2 className="text-2xl font-bold text-slate-900">The 8-Week Pilot Program</h2>
             <p className="mt-2 text-slate-600">
-              No risk. No commitment. Just data on what changes when your practice uses Adherix.
+              No risk. No commitment. Just data on what changes when your practice uses Clinivore.
             </p>
           </div>
           <div className="grid gap-8 sm:grid-cols-2">

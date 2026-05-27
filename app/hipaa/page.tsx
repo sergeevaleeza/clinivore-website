@@ -3,9 +3,9 @@ import Link from "next/link";
 import { ShieldCheck, Lock, Users, FileWarning, Brain } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "HIPAA Compliance — Adherix",
+  title: "HIPAA Compliance — Clinivore",
   description:
-    "Adherix HIPAA compliance statement. Business Associate Agreements, technical safeguards, and PHI handling practices.",
+    "Clinivore HIPAA compliance statement. Business Associate Agreements, technical safeguards, and PHI handling practices.",
 };
 
 export default function HIPAAPage() {
@@ -21,7 +21,7 @@ export default function HIPAAPage() {
             HIPAA Compliance
           </h1>
           <p className="mt-5 text-lg text-slate-600">
-            Adherix is designed for use in HIPAA-covered healthcare environments.
+            Clinivore is designed for use in HIPAA-covered healthcare environments.
           </p>
         </div>
       </section>
@@ -39,14 +39,14 @@ export default function HIPAAPage() {
             </h2>
           </div>
           <p className="text-slate-600 leading-relaxed">
-            Adherix enters into Business Associate Agreements with covered entities prior to
+            Clinivore enters into Business Associate Agreements with covered entities prior to
             handling any Protected Health Information. The BAA outlines our obligations as a
             Business Associate under HIPAA, including safeguards, breach notification, and
             permissible uses of PHI.
           </p>
           <p className="mt-3 text-slate-600 leading-relaxed">
             BAAs are available upon request before any PHI is entered into the platform.
-            Use of Adherix with PHI prior to BAA execution is not permitted under our{" "}
+            Use of Clinivore with PHI prior to BAA execution is not permitted under our{" "}
             <Link href="/terms" className="text-brand-600 hover:underline">
               Terms of Service
             </Link>
@@ -133,14 +133,14 @@ export default function HIPAAPage() {
             <h2 className="text-xl font-bold text-slate-900">4. 42 CFR Part 2</h2>
           </div>
           <p className="text-slate-600 leading-relaxed">
-            Adherix supports practices that treat substance use disorders. Our workflows are
+            Clinivore supports practices that treat substance use disorders. Our workflows are
             designed with 42 CFR Part 2 protections in mind. Substance use disorder treatment
             records — including records related to Vivitrol and Sublocade administration — require
             patient consent before disclosure and carry stricter protections than standard HIPAA
             PHI.
           </p>
           <p className="mt-3 text-slate-600 leading-relaxed">
-            Adherix does not automate any disclosure of SUD treatment records. All outreach
+            Clinivore does not automate any disclosure of SUD treatment records. All outreach
             tasks and documentation are staff-reviewed and staff-initiated. Practices with SUD
             patients are responsible for ensuring that disclosures comply with applicable 42 CFR
             Part 2 requirements.
@@ -160,7 +160,7 @@ export default function HIPAAPage() {
             Default AI mode uses only non-identifying patient identifiers (e.g., internal
             patient IDs and protocol names) when generating documentation drafts. The full name,
             date of birth, and other PHI fields are excluded from AI requests unless the practice
-            has explicitly opted into PHI-enabled AI under a BAA with Adherix.
+            has explicitly opted into PHI-enabled AI under a BAA with Clinivore.
           </p>
           <p className="mt-3 text-slate-600 leading-relaxed">
             All AI draft generation events are logged in the audit trail, including the PHI

@@ -11,12 +11,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Adherix — Treatment Continuity for Psychiatric Practices",
+  title: "Clinivore — Treatment Continuity for Psychiatric Practices",
   description:
-    "Adherix helps psychiatric practices track injection schedules, automate outreach, and document follow-up — purpose-built for ketamine, LAI antipsychotics, and addiction medicine.",
-  metadataBase: new URL("https://adherixhealth.app"),
+    "Clinivore helps psychiatric practices track injection schedules, automate outreach, and document follow-up — purpose-built for ketamine, LAI antipsychotics, and addiction medicine.",
+  metadataBase: new URL("https://clinivore.app"),
   openGraph: {
-    siteName: "Adherix",
+    siteName: "Clinivore",
     type: "website",
   },
 };

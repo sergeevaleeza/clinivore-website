@@ -49,7 +49,7 @@ export default function HomePage() {
                 Keep Patients in Care.
               </h1>
               <p className="mt-6 text-lg leading-8 text-slate-600">
-                Adherix helps psychiatric practices track injection schedules,
+                Clinivore helps psychiatric practices track injection schedules,
                 automate outreach, and document follow-up — purpose-built for
                 ketamine, LAI antipsychotics, and addiction medicine.
               </p>
@@ -76,7 +76,7 @@ export default function HomePage() {
                   <div className="h-3 w-3 rounded-full bg-red-400" />
                   <div className="h-3 w-3 rounded-full bg-amber-400" />
                   <div className="h-3 w-3 rounded-full bg-green-400" />
-                  <span className="ml-2 text-xs text-slate-400 font-medium">Adherix Dashboard</span>
+                  <span className="ml-2 text-xs text-slate-400 font-medium">Clinivore Dashboard</span>
                 </div>
                 <div className="flex">
                   <aside className="w-36 bg-slate-50 border-r border-slate-100 p-3 hidden sm:block">
@@ -161,7 +161,7 @@ export default function HomePage() {
               {
                 Icon: CheckCircle,
                 iconColor: "text-green-500",
-                heading: "Adherix was built for this exact problem.",
+                heading: "Clinivore was built for this exact problem.",
                 body: "A morning dashboard, automated outreach queue, and AI-assisted documentation — designed for practices managing psychiatric injections.",
               },
             ].map(({ Icon, iconColor, heading, body }) => (
@@ -183,7 +183,7 @@ export default function HomePage() {
               Your morning starts with a clear picture.
             </h2>
             <p className="mt-3 text-slate-600 max-w-xl mx-auto">
-              Every feature in Adherix is designed around the real workflow of a psychiatric practice coordinator.
+              Every feature in Clinivore is designed around the real workflow of a psychiatric practice coordinator.
             </p>
           </div>
           <div className="grid gap-8 sm:grid-cols-3">
