@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Adherix Marketing Website
 
-## Getting Started
+Public marketing and developer credibility website for [Adherix](https://adherixhealth.app) — a treatment continuity platform for psychiatric practices.
 
-First, run the development server:
+## What this repo is
+
+This is the **public marketing site** for Adherix, separate from the main application code. It serves two purposes:
+
+1. **Practice Fusion API access application** — reviewed by PF developer relations at [/developer](https://adherixhealth.app/developer)
+2. **Customer acquisition** — psychiatric practices finding Adherix via search
+
+The application code is at [github.com/sergeevaleeza/adherix](https://github.com/sergeevaleeza/adherix).
+
+## Tech Stack
+
+- **Next.js 16** (App Router, TypeScript)
+- **Tailwind CSS v4** — utility-first styling
+- **Lucide React** — icons
+- **Framer Motion** — available for animations
+- Static export (`output: 'export'`) — no server required
+
+## Pages
+
+| Route | Description |
+|-------|-------------|
+| `/` | Homepage: hero, problem, feature highlights, protocols, pilot CTA |
+| `/features` | Full feature breakdown (6 sections) |
+| `/for-practices` | Buyer-focused: ROI, pilot program, who it's for |
+| `/developer` | Practice Fusion integration, FHIR docs, data handling |
+| `/about` | Company background |
+| `/privacy` | Privacy Policy (required for PF API access) |
+| `/terms` | Terms of Service (required for PF API access) |
+| `/hipaa` | HIPAA compliance statement (required for PF API access) |
+| `/contact` | Contact form (mailto-based, no backend) |
+
+## Local Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+Output goes to `out/` (static HTML/CSS/JS). Zero TypeScript errors required.
 
-To learn more about Next.js, take a look at the following resources:
+## Deploy to Vercel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Push this repo to GitHub
+2. Go to [vercel.com](https://vercel.com) → Add New Project → Import from GitHub
+3. Select this repo — framework auto-detected as Next.js
+4. Deploy → get your `.vercel.app` URL
+5. Add custom domain `adherixhealth.app` in Vercel project settings
+6. Set DNS on Porkbun (A record + CNAME per Vercel instructions)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+GitHub Actions auto-deploy on push to `main` via `.github/workflows/deploy.yml`.
+Requires `VERCEL_TOKEN`, `ORG_ID`, and `PROJECT_ID` secrets in the repo.
 
-## Deploy on Vercel
+## Domain Setup
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Domain: `adherixhealth.app` via Porkbun (~$10/year).
+SSL is automatic via Vercel (Let's Encrypt).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Practice Fusion API Checklist
+
+Before applying at the PF developer portal:
+
+- Live website: `https://adherixhealth.app`
+- Developer page: `https://adherixhealth.app/developer`
+- Privacy Policy: `https://adherixhealth.app/privacy`
+- Terms of Service: `https://adherixhealth.app/terms`
+- HIPAA Statement: `https://adherixhealth.app/hipaa`
+- Contact: `https://adherixhealth.app/contact`
+- GitHub: `github.com/sergeevaleeza/adherix`
