@@ -1,5 +1,33 @@
 # Changelog
 
+## [1.1.0] — 2026-05-26
+
+Brand V3 implementation — Clinivore Official Brand Toolkit.
+
+### Design System
+
+- **`app/globals.css`**: Replaced sky-blue Tailwind v4 `@theme` block with full Clinivore brand token system. Named tokens: `brand-navy` (#0B1D3A), `brand-blue` (#2563EB), `brand-teal` (#10B5A6), `brand-green` (#10B981), `brand-gold` (#D4A373), `brand-offwhite` (#F8F5F0), `brand-midnight` (#112A4F), `brand-plum` (#7C3AED). Legacy numbered tokens (`brand-50` through `brand-900`) remapped to new palette so existing Tailwind classes in all page files continue to resolve correctly. Added CSS custom properties (`--navy`, `--teal`, `--offwhite`, etc.) for use via `var()` in inline styles. Added `@layer components` utilities: `.btn`, `.btn-primary`, `.btn-secondary`, `.btn-tertiary`, `.card`, `.status-pill`. Added `.nav-link` and `.nav-link-mobile` CSS classes (navy text, teal hover). Added website section helpers: `.section-light`, `.section-white`, `.section-dark`.
+- **Typography**: `body` now uses `var(--font-inter)` and `background: var(--offwhite)` (warm #F8F5F0, replaces white). `h1/h2/h3` use `var(--font-sora)`. Inter and Sora loaded via `next/font/google`.
+
+### Fonts
+
+- **`app/layout.tsx`**: Added `Sora` alongside `Inter` from `next/font/google`. Both CSS variables (`--font-sora`, `--font-inter`) applied to `<html>`. Removed hardcoded `bg-white text-slate-900` from `<body>` (design tokens handle this). Updated metadata: title template (`%s | Clinivore`), new description, favicon icons pointing to `/icon.svg`, updated OpenGraph with new tagline "Close the loop. Change lives."
+
+### Favicon
+
+- **`public/icon.svg`**: Created brand icon — navy square (rx=8), white muted C-arc, teal arc segment, blue orbit dot at top, green dot at right, teal heart in center. Used as both browser favicon and Apple touch icon.
+
+### Components
+
+- **`components/Navbar.tsx`**: Rewrote logo to "Clini" (#0B1D3A navy) + "vore" (#10B5A6 teal) in Sora 700. Nav links use `.nav-link` class (navy → teal on hover). CTA button is teal (#10B5A6) with rounded-10px corners. Border and shadow use brand semantic values. Mobile drawer updated to match.
+- **`components/Footer.tsx`**: Complete redesign. Deep navy background (#0B1D3A). Logo: "Clini" white + "vore" teal. Tagline: "Close the loop. Change lives." Footer nav links (white/50 → teal hover). Treatment types bar (Vivitrol, Invega, Ketamine, Spravato, Sublocade, Abilify Maintena, Aristada) in muted white. Bottom: copyright + HIPAA notice.
+
+### Homepage
+
+- **`app/page.tsx`**: Hero section — background changed from blue gradient to warm off-white (`var(--offwhite)`). Headline updated to "Close the loop. / Change lives." with "Change lives." in teal (#10B5A6). Eyebrow pill updated to teal style (DDF7F4 bg, 0E9F93 text). Description copy updated to coordinator-focused language. CTAs use `.btn-primary` (teal) and `.btn-secondary` (pale blue). Pilot CTA section at bottom: background changed from teal to deep navy, subtext changed from `text-brand-100` (low contrast) to `rgba(255,255,255,0.65)`, button uses teal text on white bg.
+
+---
+
 ## [1.0.0] — 2026-05-26
 
 Initial release of the Clinivore marketing and developer website.

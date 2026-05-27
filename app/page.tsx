@@ -36,33 +36,47 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-b from-brand-50 to-white">
+      <section style={{ background: "var(--offwhite)" }}>
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-28 lg:px-8">
           <div className="flex flex-col items-center text-center lg:flex-row lg:items-start lg:text-left lg:gap-16">
             <div className="flex-1 max-w-2xl">
-              <div className="inline-flex items-center rounded-full bg-brand-100 px-3 py-1 text-xs font-semibold text-brand-700 mb-6">
+              {/* Eyebrow */}
+              <div style={{
+                display: "inline-flex", alignItems: "center", gap: 6,
+                background: "#DDF7F4", color: "#0E9F93", borderRadius: 20,
+                padding: "5px 14px", fontSize: 12, fontWeight: 600, marginBottom: 24,
+              }}>
+                <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#10B5A6", flexShrink: 0 }} />
                 Phase 1 Pilot · Now Accepting Practices
               </div>
-              <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl leading-tight">
-                Reduce Missed Treatments.{" "}
-                <span className="text-brand-500">Recover Revenue.</span>{" "}
-                Keep Patients in Care.
+
+              <h1 style={{
+                fontSize: "clamp(36px, 5vw, 56px)", fontWeight: 700,
+                fontFamily: "var(--font-sora)", color: "var(--navy)",
+                lineHeight: 1.1, letterSpacing: "-0.02em", margin: 0,
+              }}>
+                Close the loop.<br />
+                <span style={{ color: "#10B5A6" }}>Change lives.</span>
               </h1>
-              <p className="mt-6 text-lg leading-8 text-slate-600">
-                Clinivore helps psychiatric practices track injection schedules,
-                automate outreach, and document follow-up — purpose-built for
-                ketamine, LAI antipsychotics, and addiction medicine.
+
+              <p className="mt-6 text-lg leading-8" style={{ color: "var(--text-secondary)" }}>
+                Clinivore gives psychiatric practice coordinators a single morning
+                dashboard for injection schedules — ketamine, LAI antipsychotics,
+                and addiction medicine — with built-in outreach and AI documentation.
               </p>
+
               <div className="mt-8 flex flex-wrap gap-4 justify-center lg:justify-start">
                 <Link
                   href="/contact"
-                  className="rounded-md bg-brand-500 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-brand-600 transition-colors"
+                  className="btn-primary"
+                  style={{ fontSize: 15, padding: "12px 24px" }}
                 >
                   Schedule a Pilot
                 </Link>
                 <Link
                   href="/developer"
-                  className="rounded-md border border-slate-200 bg-white px-6 py-3 text-sm font-semibold text-slate-700 shadow-sm hover:bg-slate-50 transition-colors"
+                  className="btn-secondary"
+                  style={{ fontSize: 15, padding: "12px 24px" }}
                 >
                   View Developer Docs
                 </Link>
@@ -242,19 +256,20 @@ export default function HomePage() {
       </section>
 
       {/* Pilot CTA */}
-      <section className="bg-brand-600 py-20">
+      <section style={{ background: "var(--navy)" }} className="py-20">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Run a free 8-week pilot at your practice.
           </h2>
-          <p className="mt-4 text-lg text-brand-100">
+          <p className="mt-4 text-lg" style={{ color: "rgba(255,255,255,0.65)" }}>
             We&apos;re onboarding a small cohort of psychiatric practices for our pilot program. No
             setup fees. No long-term commitment. Just results.
           </p>
           <div className="mt-8">
             <Link
               href="/contact"
-              className="inline-block rounded-md bg-white px-8 py-3 text-sm font-semibold text-brand-600 shadow hover:bg-brand-50 transition-colors"
+              className="inline-block rounded-[10px] bg-white px-8 py-3 text-sm font-semibold shadow transition-colors hover:bg-[#F8F5F0]"
+              style={{ color: "var(--teal)" }}
             >
               Apply for the Pilot
             </Link>

@@ -1,27 +1,185 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-50: #f0f9ff;
-  --color-brand-100: #e0f2fe;
-  --color-brand-200: #bae6fd;
-  --color-brand-300: #7dd3fc;
-  --color-brand-400: #38bdf8;
-  --color-brand-500: #0ea5e9;
-  --color-brand-600: #0284c7;
-  --color-brand-700: #0369a1;
-  --color-brand-800: #075985;
-  --color-brand-900: #0c4a6e;
+  /* === Named brand tokens === */
+  --color-brand-navy:     #0B1D3A;
+  --color-brand-blue:     #2563EB;
+  --color-brand-teal:     #10B5A6;
+  --color-brand-green:    #10B981;
+  --color-brand-gold:     #D4A373;
+  --color-brand-offwhite: #F8F5F0;
+  --color-brand-midnight: #112A4F;
+  --color-brand-plum:     #7C3AED;
 
-  --font-sans: var(--font-inter);
+  /* Legacy numbered tokens → remapped to new palette so existing Tailwind classes resolve */
+  --color-brand-50:  #F8F5F0;
+  --color-brand-100: #DDF7F4;
+  --color-brand-200: #A7EDE8;
+  --color-brand-300: #5ECFC8;
+  --color-brand-400: #2ABFB8;
+  --color-brand-500: #10B5A6;
+  --color-brand-600: #0E9F93;
+  --color-brand-700: #0B1D3A;
+  --color-brand-800: #091629;
+  --color-brand-900: #060E1B;
+
+  /* Typography */
+  --font-heading: var(--font-sora), system-ui, sans-serif;
+  --font-sans:    var(--font-inter), system-ui, sans-serif;
+
+  /* Radius + shadow */
+  --radius-card: 16px;
+  --radius-btn:  10px;
+  --shadow-card:       0 1px 4px rgba(11,29,58,0.08), 0 4px 12px rgba(11,29,58,0.04);
+  --shadow-card-hover: 0 4px 16px rgba(11,29,58,0.12);
 }
 
+/* ================================================================
+   SEMANTIC CUSTOM PROPERTIES
+   ================================================================ */
 :root {
-  --background: #ffffff;
-  --foreground: #0f172a;
+  --navy:     #0B1D3A;
+  --blue:     #2563EB;
+  --teal:     #10B5A6;
+  --green:    #10B981;
+  --gold:     #D4A373;
+  --offwhite: #F8F5F0;
+  --midnight: #112A4F;
+  --plum:     #7C3AED;
+
+  --page-bg:     var(--offwhite);
+  --card-bg:     #ffffff;
+  --card-border: #EBE8E3;
+  --card-shadow: 0 1px 4px rgba(11,29,58,0.08), 0 4px 12px rgba(11,29,58,0.04);
+
+  --text-primary:   var(--navy);
+  --text-secondary: #3D4F6B;
+  --text-muted:     #7A8BA0;
+  --text-dim:       #B0BEC5;
 }
 
+/* ================================================================
+   GLOBAL STYLES
+   ================================================================ */
 body {
-  background: var(--background);
-  color: var(--foreground);
   font-family: var(--font-inter), system-ui, sans-serif;
+  background-color: var(--page-bg);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-sora), system-ui, sans-serif;
+}
+
+/* ================================================================
+   WEBSITE SECTION HELPERS
+   ================================================================ */
+.section-light { background: var(--offwhite); }
+.section-white { background: #ffffff; }
+.section-dark  { background: var(--navy); color: #ffffff; }
+
+/* ================================================================
+   NAV LINKS
+   ================================================================ */
+.nav-link {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--navy);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: var(--teal); }
+
+.nav-link-mobile {
+  display: block;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--navy);
+  text-decoration: none;
+  transition: background-color 0.15s, color 0.15s;
+}
+.nav-link-mobile:hover {
+  background-color: #EEF4FF;
+  color: var(--teal);
+}
+
+/* Footer links — used in Server Component Footer (no event handlers) */
+.footer-link {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.footer-link:hover { color: #10B5A6; }
+
+/* ================================================================
+   COMPONENT UTILITIES
+   Note: in Tailwind v4 @apply inside @layer components can only
+   reference Tailwind utilities, not other custom classes — so base
+   button styles are inlined into each variant.
+   ================================================================ */
+@layer components {
+
+  /* Primary button — Compassionate Teal */
+  .btn-primary {
+    @apply inline-flex items-center gap-2 font-semibold
+           transition-all duration-150 cursor-pointer
+           select-none whitespace-nowrap text-white shadow-sm;
+    font-family: var(--font-inter);
+    border-radius: 10px;
+    padding: 10px 16px;
+    font-size: 14px;
+    background-color: var(--teal);
+    text-decoration: none;
+  }
+  .btn-primary:hover { background-color: #0E9F93; }
+
+  /* Secondary button — pale blue */
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 font-semibold
+           transition-all duration-150 cursor-pointer
+           select-none whitespace-nowrap;
+    font-family: var(--font-inter);
+    border-radius: 10px;
+    padding: 10px 16px;
+    font-size: 14px;
+    background-color: #EEF4FF;
+    color: var(--blue);
+    border: 1px solid #D8E5FF;
+    text-decoration: none;
+  }
+  .btn-secondary:hover { background-color: #E0ECFF; }
+
+  /* Tertiary — text only */
+  .btn-tertiary {
+    @apply inline-flex items-center gap-2 font-semibold
+           transition-all duration-150 cursor-pointer
+           select-none whitespace-nowrap;
+    font-family: var(--font-inter);
+    border-radius: 10px;
+    padding: 6px 10px;
+    font-size: 14px;
+    background: transparent;
+    color: var(--blue);
+    text-decoration: none;
+  }
+  .btn-tertiary:hover { background-color: #EEF4FF; }
+
+  /* Card */
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 16px;
+    box-shadow: var(--card-shadow);
+    padding: 20px;
+  }
+
+  /* Status pill */
+  .status-pill {
+    @apply inline-flex items-center gap-1.5 px-3 py-1
+           text-xs font-semibold rounded-full;
+  }
 }

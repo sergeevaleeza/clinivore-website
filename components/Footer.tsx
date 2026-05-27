@@ -10,42 +10,83 @@ const footerLinks = [
   { href: "/contact", label: "Contact" },
 ];
 
+const treatmentTypes = [
+  "Vivitrol",
+  "Invega",
+  "Ketamine",
+  "Spravato",
+  "Sublocade",
+  "Abilify Maintena",
+  "Aristada",
+];
+
 export default function Footer() {
   return (
-    <footer className="border-t border-slate-100 bg-white">
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center gap-6 md:flex-row md:justify-between">
-          <div className="flex flex-col items-center gap-1 md:items-start">
-            <Link href="/" className="text-xl font-bold tracking-tight">
-              <span className="text-brand-500">clini</span>
-              <span className="text-slate-900">vore</span>
+    <footer style={{ background: "#0B1D3A", color: "rgba(255,255,255,0.6)" }}>
+      <div style={{ maxWidth: 1100, margin: "0 auto", padding: "60px 24px 32px" }}>
+
+        {/* Logo + tagline */}
+        <div style={{ marginBottom: 40 }}>
+          <Link href="/" style={{ textDecoration: "none" }}>
+            <span style={{
+              fontFamily: "var(--font-sora)",
+              fontSize: 22,
+              fontWeight: 700,
+              letterSpacing: "-0.03em",
+            }}>
+              <span style={{ color: "#ffffff" }}>Clini</span>
+              <span style={{ color: "#10B5A6" }}>vore</span>
+            </span>
+          </Link>
+          <p style={{ fontSize: 13, marginTop: 6, color: "rgba(255,255,255,0.45)" }}>
+            Close the loop. Change lives.
+          </p>
+        </div>
+
+        {/* Nav links */}
+        <nav style={{
+          display: "flex",
+          flexWrap: "wrap",
+          gap: "8px 24px",
+          marginBottom: 32,
+        }}>
+          {footerLinks.map((link) => (
+            <Link key={link.href} href={link.href} className="footer-link">
+              {link.label}
             </Link>
-            <p className="text-sm text-slate-500">
-              Treatment continuity for psychiatric practices.
-            </p>
-          </div>
+          ))}
+        </nav>
 
-          <nav className="flex flex-wrap justify-center gap-x-6 gap-y-2">
-            {footerLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="text-sm text-slate-500 hover:text-slate-900 transition-colors"
-              >
-                {link.label}
-              </Link>
-            ))}
-          </nav>
+        {/* Treatment types bar */}
+        <div style={{
+          display: "flex",
+          flexWrap: "wrap",
+          gap: "8px 28px",
+          padding: "20px 0",
+          borderTop: "1px solid rgba(255,255,255,0.08)",
+          borderBottom: "1px solid rgba(255,255,255,0.08)",
+          marginBottom: 28,
+        }}>
+          {treatmentTypes.map((t) => (
+            <span key={t} style={{ fontSize: 12, color: "rgba(255,255,255,0.35)", fontWeight: 500 }}>
+              {t}
+            </span>
+          ))}
         </div>
 
-        <div className="mt-8 flex flex-col items-center gap-1 border-t border-slate-100 pt-8 text-center md:flex-row md:justify-between">
-          <p className="text-xs text-slate-400">
-            © 2026 Clinivore. All rights reserved.
-          </p>
-          <p className="text-xs text-slate-400">
-            HIPAA-Aware Design · Phase 1 Pilot
-          </p>
+        {/* Bottom row */}
+        <div style={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-between",
+          gap: 8,
+          fontSize: 12,
+          color: "rgba(255,255,255,0.3)",
+        }}>
+          <span>© 2026 Clinivore. All rights reserved.</span>
+          <span>HIPAA-Aware Design · Phase 1 Pilot</span>
         </div>
+
       </div>
     </footer>
   );
