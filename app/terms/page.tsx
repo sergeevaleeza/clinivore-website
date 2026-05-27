@@ -153,8 +153,8 @@ export default function TermsPage() {
           </p>
           <p>
             <strong>Email:</strong>{" "}
-            <a href="mailto:hello@clinivore.app" className="text-brand-600 hover:underline">
-              hello@clinivore.app
+            <a href="mailto:hello@clinivore.com" className="text-brand-600 hover:underline">
+              hello@clinivore.com
             </a>
           </p>
         </Section>

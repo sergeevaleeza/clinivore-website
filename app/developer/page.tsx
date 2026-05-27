@@ -293,7 +293,7 @@ export default function DeveloperPage() {
                 label: "PHI Handling",
                 value: "BAA required; PHI isolated from AI by default",
               },
-              { label: "Contact", value: "hello@clinivore.app" },
+              { label: "Contact", value: "hello@clinivore.com" },
             ].map(({ label, value }) => (
               <div key={label} className="flex flex-col">
                 <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider">

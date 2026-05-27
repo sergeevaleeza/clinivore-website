@@ -30,7 +30,7 @@ export default function ContactPage() {
     const body = encodeURIComponent(
       `Name: ${name}\nEmail: ${email}\nOrganization: ${org}\nReason: ${reason}\n\n${message}`
     );
-    window.location.href = `mailto:hello@clinivore.app?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:hello@clinivore.com?subject=${subject}&body=${body}`;
     setSubmitted(true);
   }
 
@@ -62,10 +62,10 @@ export default function ContactPage() {
                 <p className="mt-2 text-sm text-slate-600">
                   Your email client should have opened. If not, email us directly at{" "}
                   <a
-                    href="mailto:hello@clinivore.app"
+                    href="mailto:hello@clinivore.com"
                     className="text-brand-600 hover:underline"
                   >
-                    hello@clinivore.app
+                    hello@clinivore.com
                   </a>
                   .
                 </p>
@@ -153,7 +153,7 @@ export default function ContactPage() {
                 </button>
 
                 <p className="text-xs text-slate-400 text-center">
-                  Submitting will open your email client to send to hello@clinivore.app
+                  Submitting will open your email client to send to hello@clinivore.com
                 </p>
               </form>
             )}
@@ -198,10 +198,10 @@ export default function ContactPage() {
             <div className="rounded-xl border border-slate-200 bg-white p-6">
               <p className="text-sm text-slate-500 mb-1">Direct email</p>
               <a
-                href="mailto:hello@clinivore.app"
+                href="mailto:hello@clinivore.com"
                 className="text-brand-600 font-medium hover:underline"
               >
-                hello@clinivore.app
+                hello@clinivore.com
               </a>
             </div>
           </div>

@@ -71,7 +71,7 @@ Initial release of the Clinivore marketing and developer website.
 
 #### Contact (`app/contact/page.tsx`)
 - Client component with form (name, email, org, reason dropdown, message)
-- On submit: opens `mailto:hello@clinivore.app` with pre-filled subject and body — no backend required
+- On submit: opens `mailto:hello@clinivore.com` with pre-filled subject and body — no backend required
 - Post-submit confirmation state with fallback email link
 - Three contact cards: Pilot Applications, Developer/API, General
 - Direct email display

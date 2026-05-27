@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: "Clinivore — Treatment Continuity for Psychiatric Practices",
   description:
     "Clinivore helps psychiatric practices track injection schedules, automate outreach, and document follow-up — purpose-built for ketamine, LAI antipsychotics, and addiction medicine.",
-  metadataBase: new URL("https://clinivore.app"),
+  metadataBase: new URL("https://clinivore.com"),
   openGraph: {
     siteName: "Clinivore",
     type: "website",

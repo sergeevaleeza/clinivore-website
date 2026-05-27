@@ -126,8 +126,8 @@ export default function PrivacyPage() {
           </p>
           <p>
             Practices may request deletion of their data by contacting us at{" "}
-            <a href="mailto:privacy@clinivore.app" className="text-brand-600 hover:underline">
-              privacy@clinivore.app
+            <a href="mailto:privacy@clinivore.com" className="text-brand-600 hover:underline">
+              privacy@clinivore.com
             </a>
             . Deletion requests will be honored within 30 days, subject to applicable legal
             retention obligations.
@@ -161,14 +161,14 @@ export default function PrivacyPage() {
           </p>
           <p>
             <strong>Email:</strong>{" "}
-            <a href="mailto:privacy@clinivore.app" className="text-brand-600 hover:underline">
-              privacy@clinivore.app
+            <a href="mailto:privacy@clinivore.com" className="text-brand-600 hover:underline">
+              privacy@clinivore.com
             </a>
           </p>
           <p>
             <strong>General inquiries:</strong>{" "}
-            <a href="mailto:hello@clinivore.app" className="text-brand-600 hover:underline">
-              hello@clinivore.app
+            <a href="mailto:hello@clinivore.com" className="text-brand-600 hover:underline">
+              hello@clinivore.com
             </a>
           </p>
         </Section>
